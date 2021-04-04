@@ -1,0 +1,21 @@
+table {
+  background-color: rgba(0, 0, 0, 0.835);
+  color:white;
+}
+
+.scrollAssist {
+  display: flex;
+  justify-content: center;
+  border: none;
+  font-size: 1.5rem;
+}
+.moodTable {
+  width: 88%;
+}
+
+nav {
+  height: 35px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}

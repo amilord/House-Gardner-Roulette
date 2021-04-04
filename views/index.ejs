@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Roulette</title>
+</head>
+<body>
+  <section class="container">
+    <section class="topSection">
+      <section class="left">
+
+        <section class="extra"></section>
+      </section>
+      <section class="right">
+        <img class="img" src="/images/circle.png" alt="">
+      </section>
+    </section>
+    <section class="bottomSection">
+      <section class="bottomSectionOne">
+        <section class="userInput">
+          <form>
+            <label for="play">Amount</label>
+            <input type="text" name="play" id="userNumber" placeholder="Place Bet" value="0">
+            <select name="" id="userChoice">
+              <option class="red" value="red">Red</option>
+              <option class="black" value="black">Black</option>
+            </select>
+            <button type="button">BET</button>
+        </form>
+        </section>
+        <section class="navBar">
+          <nav>
+            <ul>
+              <li><a href="/login">Login</a></li>
+              <li><a href="/logout">Logout</a></li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+      <section class="content">
+        <h3 class="wins">Win: <span class="winsValue"><%= wins %></span></h3>
+        <h3 class="losses">Lose: <span class="lossesValue"><%= losses %></span></h3>
+        <h4>Money: <span class="moneyValue">$<%= casinoBank %></span></h4>
+      </section>
+      <section class="bottomSectionThree"></section>
+    </section>
+  </section>
+  <script src="./js/main.js"></script>
+</body>
+</html>
